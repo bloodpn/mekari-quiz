@@ -15,6 +15,7 @@ class CreateToDoListTable extends Migration
         Schema::create('to_do_list', function (Blueprint $table) {
             $table->increments('id');
             $table->string('to_do');
+            $table->timestamps();
         });
     }
 
